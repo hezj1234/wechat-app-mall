@@ -21,6 +21,12 @@ Page({
     coupons: [],
     searchInput: '',
   },
+  //呼叫号码更改为您指定的
+  calling: function () {
+    wx.makePhoneCall({
+      phoneNumber: '13388888888',
+    })
+  },
 
   tabClick: function (e) {
     this.setData({
